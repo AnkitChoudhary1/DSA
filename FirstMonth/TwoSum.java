@@ -43,5 +43,33 @@ public class TwoSum {
             System.out.println("No such numbers");
         }
     */
+
+        /* 
+        import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Start small. Ship something.");
+        int[] list = {1,3,2,5,6,8,9,10,14,45,22};
+        int target = 275;
+
+        Map<Integer, Integer> map = new HashMap<>();
+        for(int i=0; i<list.length; i++){
+            int remainder = target - list[i];
+            if(map.containsKey(remainder)){
+                System.out.println("The numbers are "+list[i]+" "+remainder);
+                return ;
+            }
+
+            else{
+                map.put(list[i],i );
+            }
+            
+        }
+        System.out.println("No such numbers");
+
+    }
+}
+
+        */
     
 }
